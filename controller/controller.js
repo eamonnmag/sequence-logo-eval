@@ -13,10 +13,10 @@ exports.post = function(req, res) {
         q5:req.body.q5, q6:req.body.q6, q7:req.body.q7, q8:req.body.q8,
         q9:req.body.q9, q9reason:req.body["q9-reason"],
         q10:req.body.q10, q10reason:req.body["q10-reason"],
-        q10:req.body.q11,
-        q10:req.body.q12,
-        q10:req.body.q13,
-        q10:req.body.q14
+        q11:req.body.q11,
+        q12:req.body.q12,
+        q13:req.body.q13,
+        q14:req.body.q14
 
 
     });
