@@ -9,8 +9,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose');
-var vhost = require('vhost');
-var app = express();
+var app = exports.app = express();
 
 // all environments
 app.set('port', process.env.PORT || 8080);
@@ -32,8 +31,6 @@ if ('development' == app.get('env')) {
 }
 
 mongoose.connect( 'mongodb://localhost/library_database', function(err) { if (err) console.log(err); } );
-
-app.use(vhost('sequencelogo.antarctic-design.co.uk', app)); // Serves top level domain via Main server app
 
 app.get('/', routes.index);
 app.get('/users', user.list);
