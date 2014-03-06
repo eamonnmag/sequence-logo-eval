@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sequence Logo</title>
+    <link href="../bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="top-bar">
+
+    <div id="logo" class="pull-left"><span
+                style="font-size: 1.9em">Sequence Logo</span></div>
+
+    <div id="menu" class="pull-right">
+        <ul>
+
+            <li>
+                <div style="font-size: 1.2em;margin-top: 10px; font-weight: normal; color: #D75232">Evaluation</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="content">
+
+<div id="explanation" align="center">
+    <img src="../img/sequence-logo.svg" alt="Sequence logo" width="98%"/> <br/><br/>
+
+    <div class="explanation-panel">
+        <img src="../img/hydrophobicity.svg" alt="hydro" width="98%"/>
+    </div>
+
+    <div class="explanation-panel">
+        <img src="../img/side-chain.svg" alt="side chain" width="98%"/>
+    </div>
+
+    <div class="explanation-panel">
+        <img src="../img/variation.svg" alt="variation" width="98%"/>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<form action="/submit" method="post">
+<div id="questions">
+<div class="survey-intro" align="center">
+    <span>Get Started</span><br/>
+</div>
+
+<div class="clearfix"></div>
+
+<div id="metadata">
+    <div class="question-section-intro" align="center" style="background-color: #4B3E4D; width: 800px; margin: 0 auto">
+
+        <div class="pull-left" style="margin-left: 30px">
+            <input type="radio" name="sex" id="sex-m" value="Male"/>
+            <label for="sex-M">Male</label>
+            <input type="radio" name="sex" id="sex-f" value="Female" checked/>
+            <label for="sex-f">Female</label>
+        </div>
+
+        <div class="pull-left" style="margin-left: 30px">
+            <label for="research-area">Research Area</label>
+            <select id="research-area" name="area">
+                <option value="biology">Biology</option>
+                <option value="bioinformatics">Bioinformatics</option>
+                <option value="compsci">Computer Science</option>
+                <option value="statistics">Statistics</option>
+            </select>
+        </div>
+
+        <div class="pull-left" style="margin-left: 30px">
+            <label for="level">Occupation</label>
+            <select id="level" name="level">
+                <option value="masters">Masters Student</option>
+                <option value="dphil">DPhil Student</option>
+                <option value="researcher">Researcher</option>
+                <option value="lecturer">Lecturer</option>
+                <option value="professor">Professor</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div id="comparison">
+    <div class="question-section-intro" align="center">
+        <span>Part 1: Comparing Letter Size</span><br/>
+        <span style="font-size: .95em; color: #f1f6f1">Which is bigger at the positions marked with the red triangle?</span>
+    </div>
+
+    <div id="question1" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 1</p>
+
+        <img src="../img/part1/q1.png" width="130px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q1" id="q1-S" value="S" required/>
+            <label for="q1-S">S is larger</label>
+            <br/>
+            <input type="radio" name="q1" id="q1-R" value="R" required/>
+            <label for="q1-R">R is larger</label>
+            <br/>
+            <input type="radio" name="q1" id="q1-N" value="N" required/>
+            <label for="q1-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q1" id="q1-C" value="C" required/>
+            <label for="q1-C">Can't tell</label>
+        </div>
+    </div>
+
+    <div id="question2" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 2</p>
+
+        <img src="../img/part1/q2.png" width="130px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q2" id="q2-R" value="R" required/>
+            <label for="q2-R">R is larger</label>
+            <br/>
+            <input type="radio" name="q2" id="q2-H" value="H" required/>
+            <label for="q2-H">H is larger</label>
+            <br/>
+            <input type="radio" name="q2" id="q2-N" value="N" required/>
+            <label for="q2-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q2" id="q2-C" value="C" required/>
+            <label for="q2-C">Can't tell</label>
+
+        </div>
+    </div>
+
+    <div id="question3" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 3</p>
+
+        <img src="../img/part1/q3.png" width="130px">
+
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q3" id="q3-E" value="E" required/>
+            <label for="q3-E">E is larger</label>
+            <br/>
+            <input type="radio" name="q3" id="q3-K" value="K" required/>
+            <label for="q3-K">K is larger</label>
+            <br/>
+            <input type="radio" name="q3" id="q3-N" value="N" required/>
+            <label for="q3-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q3" id="q3-C" value="C" required/>
+            <label for="q3-C">Can't tell</label>
+        </div>
+    </div>
+
+    <div id="question4" class="question-small" style="border: none" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 4</p>
+
+        <img src="../img/part1/q4.png" width="130px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q4" id="q4-G" value="S" required/>
+            <label for="q4-G">G is larger</label>
+            <br/>
+            <input type="radio" name="q4" id="q4-L" value="R" required/>
+            <label for="q4-L">L is larger</label>
+            <br/>
+            <input type="radio" name="q4" id="q4-N" value="N" required/>
+            <label for="q4-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q4" id="q4-C" value="C" required/>
+            <label for="q4-C">Can't tell</label>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<div id="comparison-between">
+    <div class="question-section-intro" align="center" style="background-color: #64AD59">
+        <span>Part 2: Comparing Letter Size</span><br/>
+        <span style="font-size: .95em; color: #f1f6f1">Which is bigger at the positions marked with the red triangle?</span>
+    </div>
+
+    <div id="question5" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 5</p>
+
+        <img src="../img/part2/q5.png" width="130px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q5" id="q5-S" value="S" required/>
+            <label for="q5-S">S is larger</label>
+            <br/>
+            <input type="radio" name="q5" id="q5-R" value="R" required/>
+            <label for="q5-R">R is larger</label>
+            <br/>
+            <input type="radio" name="q5" id="q5-N" value="N" required/>
+            <label for="q5-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q5" id="q5-C" value="C" required/>
+            <label for="q5-C">Can't tell</label>
+        </div>
+    </div>
+
+    <div id="question6" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 6</p>
+
+        <img src="../img/part2/q6.png" width="130px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q6" id="q6-R" value="R" required/>
+            <label for="q6-R">R is larger</label>
+            <br/>
+            <input type="radio" name="q6" id="q6-H" value="H" required/>
+            <label for="q6-H">H is larger</label>
+            <br/>
+            <input type="radio" name="q6" id="q6-N" value="N" required/>
+            <label for="q6-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q6" id="q6-C" value="C" required/>
+            <label for="q6-C">Can't tell</label>
+
+        </div>
+    </div>
+
+    <div id="question7" class="question-small" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 7</p>
+
+        <img src="../img/part2/q7.png" width="130px">
+
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q7" id="q7-E" value="E" required/>
+            <label for="q7-E">E is larger</label>
+            <br/>
+            <input type="radio" name="q7" id="q7-K" value="K" required/>
+            <label for="q7-K">K is larger</label>
+            <br/>
+            <input type="radio" name="q7" id="q7-N" value="N" required/>
+            <label for="q7-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q7" id="q7-C" value="C" required/>
+            <label for="q7-C">Can't tell</label>
+        </div>
+    </div>
+
+    <div id="question8" class="question-small" style="border: none" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 8</p>
+
+        <img src="../img/part2/q8.png" width="150px">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q8" id="q8-G" value="S" required/>
+            <label for="q8-G">G is larger</label>
+            <br/>
+            <input type="radio" name="q8" id="q8-L" value="R" required/>
+            <label for="q8-L">L is larger</label>
+            <br/>
+            <input type="radio" name="q8" id="q8-N" value="N" required/>
+            <label for="q8-N">Neither is larger</label>
+            <br/>
+            <input type="radio" name="q8" id="q8-C" value="C" required/>
+            <label for="q8-C">Can't tell</label>
+        </div>
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
+<div id="preference">
+    <div class="question-section-intro" align="center" style="background-color: #D75232">
+        <span>Part 3: The New Sequence Logo</span><br/>
+        <span style="font-size: .95em; color: #f1f6f1">Which is your preference?</span>
+    </div>
+
+    <div id="question9" class="question-large" style="border: none" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 9 - do you prefer A or B?</p>
+
+        <img src="../img/part2/preference.svg" width="90%">
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q9" id="q9-G" value="A" required/>
+            <label for="q9-G">A is better &nbsp;</label>
+
+            <input type="radio" name="q9" id="q9-L" value="B" required/>
+            <label for="q9-L">B is better &nbsp;</label>
+
+            <input type="radio" name="q9" id="q9-N" value="N" required/>
+            <label for="q9-N">Neither</label>
+
+            <label for="q9-reason">&nbsp;&nbsp;</label>
+            <input type="text" name="q9-reason" id="q9-reason"
+                   style="width: 40%; border: none; background-color: #f1f2f1" placeholder="Explain your choice..."/>
+        </div>
+    </div>
+
+    <div id="question10" class="question-large" style="border: none" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 10 - is it clear why there are differences in conservation at position 4 in Gram+ and
+            Gram- bacteria?</p>
+
+        <div style="width: 800px; margin: 0 auto">
+            <img src="../img/part2/compare-across.svg" class="pull-left" width="30%">
+
+            <div class="pull-left" style="margin-left: 30px; margin-top: 30px">
+                <input type="radio" name="q10" id="q10-Y" value="Yes" required/>
+                <label for="q10-Y">Yes &nbsp;</label>
+                <input type="radio" name="q10" id="q10-N" value="No" required/>
+                <label for="q10-N">No &nbsp;</label>
+                <input type="radio" name="q10" id="q10-U" value="Unsure" required/>
+                <label for="q10-U">Not Sure &nbsp;</label>
+                <label for="q10-reason">&nbsp;&nbsp;</label>
+                <input type="text" name="q10-reason" id="q10-reason"
+                       style="width: 100%; border: none; background-color: #f1f2f1"
+                       placeholder="Why?..."/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+    <div id="question11" class="question-medium" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 11 - is the hydrophobicity icon useful?</p>
+
+        <img src="../img/hydrophobicity.svg" alt="hydro" width="290px"/>
+
+        <br/>
+
+        <div>
+            <input type="radio" name="q11" id="q11-Y" value="Yes" required/>
+            <label for="q11-Y">Yes</label>
+            <br/>
+            <input type="radio" name="q11" id="q11-N" value="No" required/>
+            <label for="q11-N">No</label>
+        </div>
+    </div>
+
+    <div id="question12" class="question-medium" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 12 - is the side chain charge icon useful?</p>
+
+        <img src="../img/side-chain.svg" alt="side chain" width="290px"/>
+
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q12" id="q12-Y" value="Yes" required/>
+            <label for="q12-Y">Yes</label>
+            <br/>
+            <input type="radio" name="q12" id="q12-N" value="No" required/>
+            <label for="q12-N">No</label>
+        </div>
+    </div>
+
+    <div id="question13" class="question-medium" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 13 - is the variance icon useful?</p>
+
+        <img src="../img/variation.svg" alt="variation" width="290px"/>
+
+        <br/><br/>
+
+        <div>
+            <input type="radio" name="q13" id="q13-Y" value="Yes" required/>
+            <label for="q13-Y">Yes</label>
+            <br/>
+            <input type="radio" name="q13" id="q13-N" value="No" required/>
+            <label for="q13-N">No</label>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div id="question14" class="question-large" style="border: none" align="center">
+        <p style="font-weight: bolder; font-size: 1.3em">Question 14 - Further Comments</p>
+
+        <div style="width: 800px; margin: 0 auto">
+
+            <div style="margin-left: 30px; margin-top: 30px">
+
+                <textarea type="text" rows="10" name="q14" id="q14"
+                          style="width: 100%; border: none; background-color: #f1f2f1"
+                          placeholder="Anything you want to add?"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="clearfix"></div>
+
+<div id="finally">
+    <div class="question-section-intro" align="center" style="background-color: #f1f2f1;">
+        <span style="color: #F15A29">All Done! Thanks for taking part!</span>
+        <input type="submit" value="Submit Your Response" style="border: none; padding: 7px 9px; background-color: #F15A29; border-radius: 5px; margin-left: 15px; font-size: 1.5em; color: #fff">
+    </div>
+</div>
+
+</div>
+</form>
+
+</div>
+</body>
+
+
+</html>
