@@ -31,10 +31,13 @@
 <div id="explanation" align="center">
 
     <div class="alert alert-info">
-        Here we present a new representation of the <a href="http://en.wikipedia.org/wiki/Sequence_logo" target="_blank">sequence logo</a>, a visualization used to show which positions are conserved across 2 or more DNA/RNA or Protein sequences.
+        Here we present a new representation of the <a href="http://en.wikipedia.org/wiki/Sequence_logo"
+                                                       target="_blank">sequence logo</a>, a visualization used to show
+        which positions are conserved across 2 or more DNA/RNA or Protein sequences.
 
         <br/>
-        We would be grateful if you could take 3/4 minutes to complete this short evaluation. Little to no previous knowledge of sequence logos is required to complete this evaluation.
+        We would be grateful if you could take 3/4 minutes to complete this short evaluation. Little to no previous
+        knowledge of sequence logos is required to complete this evaluation.
     </div>
 
     <img src="../img/sequence-logo.svg" alt="Sequence logo" width="98%"/> <br/><br/>
@@ -324,17 +327,20 @@
 
             <label for="q9-reason">&nbsp;&nbsp;</label>
             <input type="text" name="q9-reason" id="q9-reason"
-                   style="width: 40%; border: none; background-color: #f1f2f1; padding: 5px" placeholder="Please explain your choice..."/>
+                   style="width: 40%; border: none; background-color: #f1f2f1; padding: 5px"
+                   placeholder="Please explain your choice..."/>
         </div>
     </div>
 
     <div id="question10" class="question-large" style="border: none" align="center">
-        <p style="font-weight: bolder; font-size: 1.3em">Question 10 - in the image below, from the 'glyphs' is it clear why there are differences in
+        <p style="font-weight: bolder; font-size: 1.3em">Question 10 - in the image below, from the 'glyphs' is it clear
+            why there are differences in
             conservation at position 4 in Gram+ and Gram- bacteria?</p>
 
         <div class="alert alert-info">
             You can <a href="#glyphs">go here</a> to check the meaning of the glyphs. </br>
-            Conservation is clear in sequence logos by the size of the bar. The larger the bar, the greater the conservation at that position.
+            Conservation is clear in sequence logos by the size of the bar. The larger the bar, the greater the
+            conservation at that position.
         </div>
         <div style="width: 800px; margin: 0 auto">
             <img src="../img/part2/compare-across.svg" class="pull-left" width="30%">
@@ -357,61 +363,75 @@
 
     <div class="clearfix"></div>
 
-    <div id="question11" class="question-medium" align="center">
-        <p style="font-weight: bolder; font-size: 1.3em">Question 11 - is the hydrophobicity icon useful?</p>
 
-        <img src="../img/hydrophobicity.svg" alt="hydro" width="290px"/>
-
-        <div style="margin-top:-20px">
-            <input type="radio" name="q11" id="q11-Y" value="Yes" required/>
-            <label for="q11-Y">Yes, I find it useful</label>
-            <br/>
-            <input type="radio" name="q11" id="q11-N" value="No" required/>
-            <label for="q11-N">No, it's not useful</label>
+    <div id="comparison-between">
+        <div class="question-section-intro" align="center" style="background-color: #922A8E">
+            <span>Part 4: Glyphs</span><br/>
         </div>
-    </div>
 
-    <div id="question12" class="question-medium" align="center">
-        <p style="font-weight: bolder; font-size: 1.3em">Question 12 - is the side chain charge icon useful?</p>
+        <div id="question11" class="question-medium" align="center">
+            <p style="font-weight: bolder; font-size: 1.3em">Question 11 - is the hydrophobicity icon useful?</p>
 
-        <img src="../img/side-chain.svg" alt="side chain" width="290px"/>
+            <img src="../img/hydrophobicity.svg" alt="hydro" width="290px"/>
 
-        <div style="margin-top:-5px">
-            <input type="radio" name="q12" id="q12-Y" value="Yes" required/>
-            <label for="q12-Y">Yes, I find it useful</label>
-            <br/>
-            <input type="radio" name="q12" id="q12-N" value="No" required/>
-            <label for="q12-N">No, it's not useful</label>
+            <div style="margin-top:-20px">
+                <input type="radio" name="q11" id="q11-Y" value="Yes" required/>
+                <label for="q11-Y">Yes, I find it useful</label>
+                <br/>
+                <input type="radio" name="q11" id="q11-N" value="No" required/>
+                <label for="q11-N">No, it's not useful</label>
+            </div>
         </div>
-    </div>
 
-    <div id="question13" class="question-medium" align="center">
-        <p style="font-weight: bolder; font-size: 1.3em">Question 13 - is the variance icon useful?</p>
+        <div id="question12" class="question-medium" align="center">
+            <p style="font-weight: bolder; font-size: 1.3em">Question 12 - is the side chain charge icon useful?</p>
 
-        <img src="../img/variation.svg" alt="variation" width="290px"/>
+            <img src="../img/side-chain.svg" alt="side chain" width="290px"/>
 
-        <div>
-            <input type="radio" name="q13" id="q13-Y" value="Yes" required/>
-            <label for="q13-Y">Yes, I find it useful</label>
-            <br/>
-            <input type="radio" name="q13" id="q13-N" value="No" required/>
-            <label for="q13-N">No, it's not useful</label>
+            <div style="margin-top:-5px">
+                <input type="radio" name="q12" id="q12-Y" value="Yes" required/>
+                <label for="q12-Y">Yes, I find it useful</label>
+                <br/>
+                <input type="radio" name="q12" id="q12-N" value="No" required/>
+                <label for="q12-N">No, it's not useful</label>
+            </div>
         </div>
+
+        <div id="question13" class="question-medium" align="center">
+            <p style="font-weight: bolder; font-size: 1.3em">Question 13 - is the variance icon useful?</p>
+
+            <img src="../img/variation.svg" alt="variation" width="290px"/>
+
+            <div>
+                <input type="radio" name="q13" id="q13-Y" value="Yes" required/>
+                <label for="q13-Y">Yes, I find it useful</label>
+                <br/>
+                <input type="radio" name="q13" id="q13-N" value="No" required/>
+                <label for="q13-N">No, it's not useful</label>
+            </div>
+        </div>
+
     </div>
 
     <div class="clearfix"></div>
+    <div id="comparison-between">
+        <div class="question-section-intro" align="center" style="background-color: #414241">
+            <span>Part 5: Final Comments</span><br/>
+        </div>
 
-    <div id="question14" class="question-large" style="border: none" align="center">
-        <p style="font-weight: bolder; font-size: 1.3em">Question 14 - Further Comments</p>
+        <div id="question14" class="question-large" style="border: none" align="center">
+            <p style="font-weight: bolder; font-size: 1.3em">Question 14 - Further Comments</p>
 
-        <div style="width: 800px; margin: 0 auto">
+            <div style="width: 800px; margin: 0 auto">
 
-            <div style="margin-left: 30px; margin-top: 30px">
+                <div style="margin-left: 30px; margin-top: 30px">
 
-                <textarea type="text" rows="10" name="q14" id="q14"
-                          style="width: 100%; border: none; background-color: #f1f2f1; padding: 5px"
-                          placeholder="Anything you want to add?"></textarea>
+                    <textarea type="text" rows="10" name="q14" id="q14"
+                              style="width: 100%; border: none; background-color: #f1f2f1; padding: 5px"
+                              placeholder="Anything you want to add?"></textarea>
+                </div>
             </div>
+
         </div>
     </div>
 
