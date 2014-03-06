@@ -30,7 +30,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-mongoose.connect( 'mongodb://localhost/library_database', function(err) { if (err) console.log(err); } );
+mongoose.connect( 'mongodb://localhost/glyph_evaluation', function(err) { if (err) console.log(err); } );
 
 app.get('/', routes.index);
 app.get('/users', user.list);
